@@ -1,0 +1,30 @@
+:root {
+  --font-small: 0.6rem;
+  --font-medium: 1.2rem;
+  --font-large: 1.6rem;
+  /*                               --colors--               */
+  --nav-top-nontransparent: hsla(230, 51%, 18%, 1);
+  --nav-top-bgcolor: hsla(256, 59%, 24%, 0.85);
+  --nav-top-transparent: hsla(226, 89%, 24%, 0.85);
+
+  --bgcolor-primary: linear-gradient(
+    180deg,
+    #2245a0 23.78%,
+    rgba(10, 14, 25, 0.62) 100%
+  );
+}
+
+@media (min-width: 784px) {
+  .container-details {
+    margin-left: calc(3.4rem);
+    min-width: calc(100% - 3.4rem);
+    height: calc(100vh - 4.6rem);
+    margin-bottom: 0.4rem;
+  }
+  .container-main {
+    margin-top: 4.8rem;
+    margin-bottom: 0.4rem;
+    width: calc(100%);
+    display: flex;
+  }
+}

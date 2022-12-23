@@ -1,0 +1,24 @@
+.left-navbar {
+  position: fixed;
+  left: 0;
+  min-height: calc(100% - 4.1rem);
+  max-width: 3.4rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-contents {
+  border-radius: 1.2rem 0rem 0rem 1.2rem;
+  min-height: fit-content;
+  background: var(--bgcolor-primary);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  left: 0;
+}
+.left-nav-link {
+  color: hsla(123, 22%, 67%, 1);
+  font-size: 1.6rem;
+  padding: 0.8rem;
+}

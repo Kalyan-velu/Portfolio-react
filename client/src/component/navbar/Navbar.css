@@ -1,0 +1,39 @@
+@media (min-width: 320px) {
+  .navbar-top {
+    display: none;
+  }
+  .navbar-top .logo {
+    font-size: var(--font-large);
+    font-family: "Mansalva";
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+
+    color: #ffffff;
+  }
+}
+@media (min-width: 784px) {
+  .navbar-top {
+    display: block;
+    width: 100%;
+    background-color: var(--nav-top-transparent);
+    height: 4.4rem;
+    border-radius: 0 0 1.9rem 1.9rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+  }
+  .navbar-top .logo {
+    font-size: var(--font-large);
+    font-family: "Mansalva";
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+
+    color: #ffffff;
+  }
+}

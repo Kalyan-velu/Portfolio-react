@@ -1,0 +1,7 @@
+.navlink {
+  text-decoration: none;
+}
+.active {
+  background-color: blue;
+  border-radius: 1.2rem 0rem 0rem 1.2rem;
+}
