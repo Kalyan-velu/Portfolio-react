@@ -13,9 +13,15 @@ export const NavLink = ({title,className,to,children}) => {
     </NaL>
   )
 }
- export const Link=({title,className,secClass,to,children})=>{
+
+export const openInNewTab = (url) => {
+  const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+  if (newWindow) newWindow.opener = null;
+}
+
+export const Link=({link,title,className,secClass,to,children})=>{
    return(
-      <L to={`${to}`}className={`${className} ${secClass} navlink`}>
+      <L onClick={()=>openInNewTab(link)} className={`${className} ${secClass} navlink`}>
         {/* <Tooltip title={title||'Link'}> */}
             {children}        
         {/* </Tooltip> */}

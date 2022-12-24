@@ -7,9 +7,9 @@ const Contact = () => {
   return (
     <div className="container-main">
         <LeftNavbar/>
-        <div className="container-details">
+        <section id='contact' className="container-details">
           <ContactDetails/>
-        </div>
+        </section>
     </div>
   )
 }

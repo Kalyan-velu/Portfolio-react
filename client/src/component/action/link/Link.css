@@ -1,7 +1,10 @@
 .navlink {
   text-decoration: none;
+  color: hsla(123, 2%, 67%, 1);
+  font-size: 1.6rem;
+  padding: 0.8rem;
 }
 .active {
-  background-color: blue;
-  border-radius: 1.2rem 0rem 0rem 1.2rem;
+  color: var(--logo-active);
+  border-radius: 1.2rem 1.2rem 0 0;
 }
