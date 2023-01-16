@@ -1,6 +1,7 @@
 import React from 'react'
 import LeftNavbar from '../../component/navbar/leftnavbar/LeftNavbar'
 import '../../App.css'
+import EducationDetails from '../../component/bars/education/Education'
 
 
 const Education = () => {
@@ -8,7 +9,7 @@ const Education = () => {
     <div className="container-main">
         <LeftNavbar/>
         <div className="container-details">
-          hey
+          <EducationDetails/>
         </div>
     </div>
   )

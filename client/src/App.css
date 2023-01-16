@@ -11,7 +11,7 @@
   --logo-active: hsla(223, 59%, 67%, 1);
 
   --bgcolor-primary: linear-gradient(
-    270deg,
+    -270deg,
     #2245a0 10.78%,
     rgba(10, 14, 25, 0.62) 100%
   );
@@ -21,7 +21,6 @@
   .container-details {
     min-width: calc(100%);
     margin-top: 3.7rem;
-    height: calc(100vh - 3.6rem);
   }
   .container-main {
     width: calc(100%);

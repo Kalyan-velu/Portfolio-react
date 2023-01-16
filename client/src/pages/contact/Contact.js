@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import LeftNavbar from '../../component/navbar/leftnavbar/LeftNavbar'
 import '../../App.css'
-import ContactDetails from '../../component/bars/contact/Contact'
+import ContactDetails from '../../component/bars/contact/Contact.js'
 
 const Contact = () => {
   return (

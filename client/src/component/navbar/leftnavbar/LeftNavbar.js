@@ -12,9 +12,9 @@ const LeftNavbar = () => {
       <NavLink title={'Education'} to={'/education'} className={'education-link '} >
          <i className="fa-solid fa-graduation-cap"></i>
       </NavLink>
-      <NavLink title={'Certificates'} to={'/achivements'} className={'achivements-link '} >
+      {/* <NavLink title={'Certificates'} to={'/achivements'} className={'achivements-link '} >
          <i className="fa-solid fa-award"></i>
-      </NavLink>
+      </NavLink> */}
       <NavLink title={'Projects'} to={'/projects'} className={'achivements-link '} >
          <i className="fa-solid fa-hammer"></i>
       </NavLink>

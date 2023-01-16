@@ -1,5 +1,5 @@
 @media (min-width: 320px) {
-  .home-container{
+  .home-container {
     height: calc(100%);
     width: calc(100%);
   }
@@ -10,7 +10,7 @@
     align-items: center;
     height: calc(100%);
     width: calc(100%);
-    background: var(--bgcolor-primary);
+    /* background: aliceblue; */
     /* border-radius: 0.8rem 0.8rem 0 0; */
   }
   .about-container {
@@ -25,7 +25,7 @@
     font-style: normal;
     font-weight: 400;
 
-    color: #ffff;
+    color: rgb(87, 85, 85);
   }
 
   .more-details {
@@ -39,7 +39,7 @@
   }
   .download a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(233, 226, 226);
     font-weight: 500;
   }
   .img-container,
@@ -58,7 +58,7 @@
     justify-items: center;
     align-items: center;
 
-    background: var(--bgcolor-primary);
+    /* background: var(--bgcolor-primary); */
     /* border-radius: 1.8rem 1.8rem 0 0; */
   }
 
@@ -72,7 +72,7 @@
 }
 .wrapper {
   font-family: "Mansalva";
-  color: #ffff;
+  color: rgb(36, 35, 35);
 }
 
 .wrapper .dynamic-txts {
@@ -102,7 +102,7 @@
 .dynamic-txts li span::before {
   content: "";
   position: absolute;
-  background: #3d538c;
+  background:#fff;
   height: 100%;
   width: 100%;
   border-left: 2px solid #fff;

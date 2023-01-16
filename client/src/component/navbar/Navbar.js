@@ -4,7 +4,7 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <nav className='navbar-top'>
+    <nav className='navbar-top' data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
       <Link to={'/'} link={`https://www.instagram.com/_kalyan_jyoti_borah/`} title='Instagram' className='logo'>
        <i className="fa-brands fa-instagram"></i>
       </Link>
