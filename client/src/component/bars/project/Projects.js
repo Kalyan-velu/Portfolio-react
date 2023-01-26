@@ -5,7 +5,7 @@ import "../../../pages/project/Project.css"
 import { Link } from '../../action/link/Link'
 const Project = ({ p }) => {
    return (
-      <div className='p-container'>
+      <div data-aos="fade-up-right" className='p-container'>
          <div className='p-details'>
             <div className='p-link'>
                <h2>{p.name}</h2>
