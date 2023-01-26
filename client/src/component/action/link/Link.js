@@ -21,7 +21,7 @@ export const openInNewTab = (url) => {
 
 export const Link=({link,title,style,className,secClass,to,children})=>{
    return(
-      <L onClick={()=>openInNewTab(link)} style={style} className={`${className} ${secClass} navlink`}>
+      <L onClick={()=>openInNewTab(link)} title={title} style={style} className={`${className} ${secClass} navlink`}>
         {/* <Tooltip title={title||'Link'}> */}
             {children}        
         {/* </Tooltip> */}

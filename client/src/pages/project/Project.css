@@ -1,0 +1,67 @@
+@media (min-width: 320px) {
+  .project-list {
+    min-width: 100%;
+    display: grid;
+    gap: 2rem;
+  }
+  .p-preview {
+    width: 100%;
+  }
+  .p-preview img {
+    width: inherit;
+    aspect-ratio: 3/2;
+    border-radius: 0.5rem;
+  }
+  .p-container {
+    width: 90%;
+    /* border:  solid; */
+    padding: 0.4rem;
+    margin: auto;
+    border-radius: 0.4rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1.4rem;
+    border: 0.12rem solid skyblue;
+  }
+  .p-link {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+  }
+  .plink:hover,
+  .glink:hover {
+    color: black;
+  }
+  .tech {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .tech p {
+    background-color: #00ffff3a;
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.5rem;
+  }
+  .glink {
+    color: rgb(89, 85, 85);
+  }
+  #github {
+    font-size: 44px;
+  }
+}
+@media (min-width: 780px) {
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .p-container {
+    max-width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
