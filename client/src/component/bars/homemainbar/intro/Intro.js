@@ -1,7 +1,6 @@
 import { FaAngleRight } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import classes from "./Intro.module.css";
-import qualifiPhoto from "../../../../assests/images/qualification.png";
 import { Link } from "../../../action/link/Link";
 
 
