@@ -2,8 +2,12 @@ import { FaAngleRight } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import classes from "./Intro.module.css";
 import {Skill} from "./Skill";
+import {useEffect} from "react";
 
 const Intro = () => {
+  useEffect(()=>{
+    document.title="Kalyan | Introduction"
+  },[])
   return (
     <>
       <div className={classes.intro} id="about">

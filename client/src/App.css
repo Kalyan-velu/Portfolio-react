@@ -6,18 +6,19 @@
   --nav-top-nontransparent: hsla(230, 51%, 18%, 1);
   --nav-top-bgcolor: hsla(256, 59%, 24%, 0.85);
   --nav-top-transparent: hsla(226, 89%, 24%, 0.85);
-
-  --color-dark: hsla(219, 47%, 91%, 1);
+}
+.light{
   --color-light: hsla(223, 59%, 67%, 1);
   --color-light-primary: hsl(223, 36%, 28%);
-
+}
+.dark{
+  --color-dark: hsla(219, 47%, 91%, 1);
   --bgcolor-primary: linear-gradient(
-    -270deg,
-    #2245a0 10.78%,
-    rgba(10, 14, 25, 0.62) 100%
+          -270deg,
+          #2245a0 10.78%,
+          rgba(10, 14, 25, 0.62) 100%
   );
 }
-
 @media (min-width: 320px) {
   .container-details {
     min-width: calc(100%);

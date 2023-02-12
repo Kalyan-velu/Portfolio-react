@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import LeftNavbar from '../../component/navbar/leftnavbar/LeftNavbar'
 import '../../App.css'
 import Project from '../../component/bars/project/Projects'
@@ -101,6 +101,9 @@ const Projects = () => {
     desc: "A image search website that uses pixabay api to fetch images ."
   }
   ]
+  useEffect(()=>{
+    document.title="Kalyan | Projects"
+  },[])
   return (
     <div className="container-main">
       <LeftNavbar />

@@ -46,12 +46,12 @@
   gap: 1rem;
 }
 .skill p{
-  padding: 0.2rem;
+  padding: 0.4rem;
   background-color: var(--nav-top-nontransparent);
   color: var(--color-light);
   border-radius: 0.4rem;
   min-height: 0.4rem;
-  max-height: 0.8rem;
+  max-height: 1rem;
 }
 @media (max-width: 964px) {
   .photoAndBio {
@@ -85,7 +85,7 @@
     padding: 0;
   }
   .education h1 {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .qualification {
@@ -103,24 +103,24 @@
     font-size: 1.5rem;
   }
 }
-.playlist{
-  overflow: hidden;
-}
-.playlist h2 {
-  border-bottom: 2px solid #00a6eb;
-  color: #173b6c;
-  font-size: 32px;
-  font-weight: bold;
-  display: inline;
-}
-.playlist h3 {
-  /* border-bottom: 2px solid #00a6eb; */
-  color: #173b6c;
-  font-weight: bold;
-}
+/*.playlist{*/
+/*  overflow: hidden;*/
+/*}*/
+/*.playlist h2 {*/
+/*  border-bottom: 2px solid #00a6eb;*/
+/*  color: #173b6c;*/
+/*  font-size: 32px;*/
+/*  font-weight: bold;*/
+/*  display: inline;*/
+/*}*/
+/*.playlist h3 {*/
+/*  !* border-bottom: 2px solid #00a6eb; *!*/
+/*  color: #173b6c;*/
+/*  font-weight: bold;*/
+/*}*/
 .bio span {
   font-weight: 700;
-  font-size: 14;
+  font-size: 0.8rem;
 }
 
 .qualification {
