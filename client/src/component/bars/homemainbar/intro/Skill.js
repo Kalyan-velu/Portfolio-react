@@ -1,0 +1,21 @@
+export const Skill=[
+    "HTML5",
+    "PHP",
+    "CSS3",
+    "TailwindCSS",
+    "Sass",
+    "MaterialUI",
+    "ChakraUI",
+    "Figma",
+    "JavaScript",
+    "ReactJs",
+    "VueJS",
+    "NextJS",
+    "NodeJS",
+    "ExpressJS",
+    "Java",
+    "Python3",
+    "Django",
+    "Django-Rest API",
+    "FastAPI"
+]

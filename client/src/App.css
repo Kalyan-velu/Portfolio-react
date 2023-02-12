@@ -7,8 +7,9 @@
   --nav-top-bgcolor: hsla(256, 59%, 24%, 0.85);
   --nav-top-transparent: hsla(226, 89%, 24%, 0.85);
 
-  --logo-primary: hsla(219, 47%, 91%, 1);
-  --logo-active: hsla(223, 59%, 67%, 1);
+  --color-dark: hsla(219, 47%, 91%, 1);
+  --color-light: hsla(223, 59%, 67%, 1);
+  --color-light-primary: hsl(223, 36%, 28%);
 
   --bgcolor-primary: linear-gradient(
     -270deg,

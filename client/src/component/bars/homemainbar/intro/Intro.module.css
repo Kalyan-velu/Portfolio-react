@@ -39,7 +39,20 @@
   list-style: none;
   padding: 0;
 }
-
+.skill{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.skill p{
+  padding: 0.2rem;
+  background-color: var(--nav-top-nontransparent);
+  color: var(--color-light);
+  border-radius: 0.4rem;
+  min-height: 0.4rem;
+  max-height: 0.8rem;
+}
 @media (max-width: 964px) {
   .photoAndBio {
     display: flex;

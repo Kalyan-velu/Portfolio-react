@@ -1,9 +1,7 @@
 import { FaAngleRight } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import classes from "./Intro.module.css";
-import { Link } from "../../../action/link/Link";
-
-
+import {Skill} from "./Skill";
 
 const Intro = () => {
   return (
@@ -43,38 +41,29 @@ const Intro = () => {
                     <FaAngleRight />
                     <span>Phone:</span> +91 9101725446
                   </li>
-
-
-                </ul>
+               </ul>
               </div>
             </IconContext.Provider>
           </div>
         </div>
-        <div data-aos="fade-left" className={classes.playlist}>
-          <h2 style={{ textAlign: "center" }}>My Playlists</h2>
-          <h3>
-            <Link link={"https://open.spotify.com/user/31klyonozioc7r26lj2nk4xyorte?si=e7a780f977734614"} title={"my spotify a/c"}>
-              1.Spotify
-            </Link>
-          </h3>
+        <div className={classes.photoAndBio}>
           <div data-aos="fade-left">
-            <iframe title="playlist1" style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/1H97oJHMZvfdPFQW0IRUhi?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          </div>
-          <div data-aos="fade-left">
-            <iframe title="playlist2" style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/61APPD75B5JcdD7CbOdsDk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          </div>
-          <h3>
-            <Link link={""} title={"my spotify a/c"}>
-              2.Amazon Music
-            </Link>
-          </h3>
-          <div data-aos="fade-left">
-            <iframe title="amazon1" id='AmazonMusicEmbededbbb05b2873495fb5fbca9377a71964i8n0' src='https://music.amazon.in/embed/edbbb05b2873495fb5fbca9377a71964i8n0/?id=Eeruiyyava&marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN' width='100%' height='552' style={{ border: "1px solid rgba(0, 0, 0, 0.12)" }} loading="lazy"></iframe>
-          </div>
-          <div data-aos="fade-left">
-            <iframe title="amazon2" id='AmazonMusicEmbed1b11a82513604678826160ffbac48675i8n0' src='https://music.amazon.in/embed/1b11a82513604678826160ffbac48675i8n0/?id=PNSKzp0Ixc&marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN' width='100%' height='550' style={{ border: "1px solid rgba(0, 0, 0, 0.12)" }} loading="lazy"></iframe>
+            <h2>My Skills</h2>
+            <p>
+              Since I started coding and UI design, I've gotten some experience with a variety of tools and technologies. Every day, I try to learn something new, and as a result, I get my hands filthy with any technology that catches my eye. Figma is my go-to tool for wireframe and UI design. Although I do occasionally use Canva for UI design. For coding, I mostly use VS Code, and JetBrains IDEs.
+              <br/>
+              I've mentioned some of the technology and tools that I've used.
+            </p>
+            <IconContext.Provider value={{ color: "#00a6eb", size: "1rem" }}>
+              <div className={classes.skill}>
+                {Skill.map((skill,index)=>(
+                    <p key={index}>{skill}</p>
+                ))}
+              </div>
+            </IconContext.Provider>
           </div>
         </div>
+
       </div>
     </>
   );
