@@ -43,7 +43,7 @@ const Intro = () => {
                   </li>
                   <li>
                     <FaAngleRight />
-                    <span>Phone:</span> +91 9101725446
+                    <span>Phone: </span> +91 9101725446
                   </li>
                </ul>
               </div>
