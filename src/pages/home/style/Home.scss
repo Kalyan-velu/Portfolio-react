@@ -1,0 +1,42 @@
+#hero {
+  @apply h-[100%] flex relative flex-col justify-center items-center;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    background-position: 0% 0%;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-position: 200% 200%;
+  }
+}
+
+.gradient {
+  --size: 10rem;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  --gradient: linear-gradient(to left, #0c3828d9, #1e124f, #56134fd9, #227c9c);
+
+  width: var(--size);
+  height: var(--size);
+  background-image: var(--gradient);
+  background-size: 250%;
+  filter: blur(calc(var(--size) / 5));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.fadeout {
+  opacity: 0;
+  animation: fade-out 2000ms;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
