@@ -1,15 +1,11 @@
 import { Link } from "../../../../component/action";
-import "../../style/Contact.scss";
-
 import EmailForm from "../email/SendEmail";
-
 import { FiMail, FiSmartphone, FiMapPin, FiLinkedin } from "react-icons/fi";
 
 const ContactDetails = () => {
   return (
     <>
-      <div className={"contact"}>
-        <div className={"contact__location"} data-aos="fade-right">
+        <div className={"contact-location"} data-aos="fade-right">
           <div style={{ marginBottom: "20px" }}>
             <span>
               {" "}
@@ -55,10 +51,9 @@ const ContactDetails = () => {
             </div>
           </div>
         </div>
-        <div className={"contact__email  "} data-aos="fade-left">
+        <div className={"contact-email"} data-aos="fade-left">
           <EmailForm />
         </div>
-      </div>
     </>
   );
 };

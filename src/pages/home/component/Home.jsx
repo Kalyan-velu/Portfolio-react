@@ -1,10 +1,11 @@
 import HomeMainbar from "./main/HomeMainbar";
 
-const Hero=()=>{
+const Home=()=>{
+    
     return (
-        <>
+        <section id="hero">
             <HomeMainbar/>
-        </>
+        </section>
     )
 }
-export default Hero;
+export default Home;

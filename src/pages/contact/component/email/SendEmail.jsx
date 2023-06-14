@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import "../../style/Contact.scss";
 
 const EmailForm = () => {
   const [name, setName] = useState("");
@@ -70,7 +69,7 @@ const EmailForm = () => {
 
   return (
     <>
-      <form className={"email_form"} onSubmit={sendEmail} >
+      <form className={"email-form"} onSubmit={sendEmail} >
         <div >
           <label>Your Name</label>
           <input
@@ -106,14 +105,14 @@ const EmailForm = () => {
             name="message"
             rows="7"
             cols="30"
-            min="3"
+
             onChange={messageHandler}
             value={message}
           ></textarea>
         </div>
-        <div className={"email_form__btn"} style={{ textAlign: "center" }}>
+        <div className={"email-form-btn"} style={{ textAlign: "center" }}>
           <button
-            className={disabled ? "email_form__btn__disabled" : "email_form__btn__enabled"}
+            className={disabled ? "email-form-btn--disabled" : "email-form-btn--enabled"}
             disabled={disabled}
           >
             Send Message

@@ -5,7 +5,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    colors: {
+      'blue': '#1fb6ff',
+      'gray-dark': '#273444',
+      'dark-blue': 'hsl(205, 51%, 12%)'
+    },
+    'textColor': {
+      'green': 'green',
+    },
+    extend: {
+      screens: {
+        mobile: { max: "700px" },
+        widescreen: { min: "700px" },
+      },
+    },
   },
   plugins: [],
 }

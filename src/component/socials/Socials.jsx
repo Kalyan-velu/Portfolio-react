@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from '../action'
-import './Navbar.css'
 
-const Navbar = () => {
+
+const Socials = () => {
   return (
     <nav className='navbar-top' data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
       <Link to={'/'} link={`https://www.instagram.com/_kalyan_jyoti_borah/`} title='Instagram' className='logo'>
@@ -24,4 +24,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Socials

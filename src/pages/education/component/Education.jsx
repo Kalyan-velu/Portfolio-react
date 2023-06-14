@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import LeftNavbar from '../../../component/navbar/leftnavbar/LeftNavbar'
+import Navbar from '../../../component/navbar/Navbar'
 import EducationDetails from './main/Education'
 import "../style/Education.scss"
 
@@ -8,11 +8,8 @@ const Education = () => {
     document.title = "Kalyan | Education"
   }, [])
   return (
-    <div className="container-main">
-      <LeftNavbar />
-      <div className="container-details">
-        <EducationDetails />
-      </div>
+    <div className="container">
+      
     </div>
   )
 }

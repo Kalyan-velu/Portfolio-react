@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import LeftNavbar from '../../../component/navbar/leftnavbar/LeftNavbar'
+import Navbar from '../../../component/navbar/Navbar'
 import ProjectItem from './item/ProjectItem'
 import "../style/Project.scss"
 
@@ -105,17 +105,8 @@ const Projects = () => {
     document.title = "Kalyan | Projects"
   }, [])
   return (
-    <div className="container-main">
-      <LeftNavbar />
-      <div className="container-details">
-        <h2 style={{ textAlign: 'center' }}>Projects</h2>
-        <div className='project-list'>
-          {projects.map((p) => (
-            <ProjectItem key={p.id} p={p} />
-          ))}
-        </div>
-
-      </div>
+    <div className="container">
+      
     </div>
   )
 }

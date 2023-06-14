@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
-import LeftNavbar from '../../../component/navbar/leftnavbar/LeftNavbar'
 import ContactDetails from './details/ContactDetails';
-
 import "../style/Contact.scss"
 
 const Contact = () => {
@@ -11,12 +9,9 @@ const Contact = () => {
   }, [])
 
   return (
-    <div className="container">
-      <LeftNavbar />
-      <section id='contact' className="container-details">
+    <section className="contact">
         <ContactDetails />
-      </section>
-    </div>
+    </section>
   )
 }
 

@@ -1,0 +1,37 @@
+@import "../../../../../styles/var";
+#name {
+  scale: 1.38;
+
+  path {
+    animation: line-anim 3000ms ease-in forwards var($anim-delay),
+      stay-hidden var($anim-delay);
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    transition: transform 300ms;
+    fill: #b0a7ba;
+  }
+}
+@keyframes line-anim {
+  from {
+    stroke-dasharray: var($total-length);
+    stroke-dashoffset: var($total-length);
+  }
+  99% {
+    stroke-dasharray: var($total-length);
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes stay-hidden {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: hidden;
+  }
+}
