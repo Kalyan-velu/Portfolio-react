@@ -1,16 +1,10 @@
-import React from 'react'
-import LeftNavbar from '../../../component/navbar/leftnavbar/LeftNavbar'
-import HomeMainbar from './main/HomeMainbar'
-import "../style/Home.scss"
-const Home = () => {
-  return (
-    <div className="container-main">
-      <LeftNavbar />
-      <div className="container-details">
-        <HomeMainbar />
-      </div>
-    </div>
-  )
-}
+import HomeMainbar from "./main/HomeMainbar";
 
-export default Home
+const Hero=()=>{
+    return (
+        <>
+            <HomeMainbar/>
+        </>
+    )
+}
+export default Hero;
