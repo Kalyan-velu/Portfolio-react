@@ -1,0 +1,35 @@
+.skill-icon {
+  transition: scale 300ms, filter 300ms;
+}
+
+.skills-container:has(.skill-icon:hover) .skill-icon {
+  opacity: 0.5;
+  scale: 0.8;
+}
+
+.skills-container:hover .skill-icon:hover {
+  opacity: 1;
+  animation: skill-hover-anim ease-out 200ms;
+  scale: 1.5;
+  filter: drop-shadow(3px 3px 6px var(--skill-shadow));
+}
+
+.waves {
+  //   width: 100%;
+  aspect-ratio: 1440/150;
+  transform: scaleX(120%);
+}
+
+path,
+rect {
+  transition: fill 800ms;
+}
+
+@keyframes skill-hover-anim {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 359.9deg;
+  }
+}
