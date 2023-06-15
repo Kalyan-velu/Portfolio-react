@@ -5,23 +5,34 @@ const NameAnimation = () => {
    let name = React.useRef(null)
 
    React.useEffect(() => {
+      const namePaths = Array.from(name.current.querySelectorAll("#name path"));
+   
+      const handleMouseEnter = (path) => {
+         path.style.transform = `rotate(${Math.random() * 2 * (Math.random() < 0.5 ? -1 : 1)}deg)`;
+      };
+   
+      const handleMouseLeave = (path) => {
+         path.style.transform = "rotate(0deg)";
+      };
+   
+      namePaths.forEach((path, i) => {
+         const totalLength = path.getTotalLength();
+         path.style.setProperty("--total-length", totalLength);
+         path.style.setProperty("--anim-delay", `${i * 200}ms`);
+   
+         path.addEventListener("mouseenter", () => handleMouseEnter(path));
+         path.addEventListener("mouseleave", () => handleMouseLeave(path));
+      });
+   
+      return () => {
+         namePaths.forEach((path) => {
+            path.removeEventListener("mouseenter", () => handleMouseEnter(path));
+            path.removeEventListener("mouseleave", () => handleMouseLeave(path));
+         });
+      };
+   }, []);
+   
 
-      const namePaths = name.current.querySelectorAll("#name path");
-      for (let i = 0; i < namePaths.length; i++) {
-         namePaths[i].style.setProperty(
-            "--total-length",
-            namePaths[i].getTotalLength()
-         );
-         namePaths[i].style.setProperty("--anim-delay", `${i * 200}ms`);
-         namePaths[i].addEventListener("mouseenter", () => {
-            namePaths[i].style.transform = `rotate(${Math.random() * 2 * (Math.random() < 0.5 ? -1 : 1)
-               }deg)`;
-         });
-         namePaths[i].addEventListener("mouseleave", () => {
-            namePaths[i].style.transform = "rotate(0deg)";
-         });
-      }
-   }, [])
 
    return (
       <div ref={name}
