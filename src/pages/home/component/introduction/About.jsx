@@ -4,7 +4,7 @@ import RandomText from '../randomText/RandomText'
 const About = () => {
    return (
       <div
-         className="skewElem absolute bottom-16 flex flex-col mobile:left-1/2 mobile:-translate-x-full text-primary text-3xl font-bold mobile:text-xl"
+         className="skewElem absolute bottom-16 flex flex-col mobile:left-1/2 mobile:-translate-x-[50%] text-primary text-2xl font-bold mobile:text-xl"
       >
          <h1>My full name is Kalyan Jyoti Borah</h1>
          <h1 className="flex flex-row gap-3">

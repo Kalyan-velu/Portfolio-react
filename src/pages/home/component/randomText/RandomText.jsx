@@ -1,39 +1,36 @@
 import React, { useEffect } from 'react';
-import "./RandomText.scss"
-function getRandomColor() {
-   var letters = '6789ABCDEF';
-   var color = '#';
-   for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * letters.length)];
-   }
-   return color;
-}
+import './RandomText.scss';
 
-function RandomText({ cycle, color }) {
-   useEffect(() => {
-      const texts = document.querySelectorAll('.rw-words-1 span');
-      for (let i = 0; i < texts.length; i++) {
-         texts[i].style.setProperty('--anim-delay', `${i * 3 * 1000}ms`);
-         texts[i].style.setProperty(
-            '--anim-length',
-            `${texts.length * 3 * 1000}ms`
-         );
-         if (color === 'random') {
-            texts[i].style.setProperty('--text-color', getRandomColor());
-         }
+const getRandomColor = () => {
+  const letters = '6789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * letters.length)];
+  }
+  return color;
+};
+
+const RandomText = ({ cycle, color }) => {
+  useEffect(() => {
+    const texts = document.querySelectorAll('.rw-words-1 span');
+    texts.forEach((text, i) => {
+      text.style.setProperty('--anim-delay', `${i * 3 * 1000}ms`);
+      text.style.setProperty('--anim-length', `${texts.length * 3 * 1000}ms`);
+      if (color === 'random') {
+        text.style.setProperty('--text-color', getRandomColor());
       }
-   }, [cycle, color]);
+    });
+  }, [cycle, color]);
 
-   return (
-      <div className="cycle-wrapper">
-         <div style={{ '--text-color': color || '#55ffdd' }} className="rw-words rw-words-1">
-            {cycle.map((text) => (
-               <span key={text}>{text}</span>
-            ))}
-         </div>
+  return (
+    <div className="cycle-wrapper">
+      <div style={{ '--text-color': color || '#55ffdd' }} className="rw-words rw-words-1">
+        {cycle.map((text) => (
+          <span key={text}>{text}</span>
+        ))}
       </div>
-   );
-}
+    </div>
+  );
+};
 
-
-export default RandomText
+export default RandomText;
